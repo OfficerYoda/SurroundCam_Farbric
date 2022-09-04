@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "surroundcam",
+  "version": "${version}",
+  "name": "SurroundCam",
+  "description": "By pressing (default) F6 you toggle a alternative third person where you can move the camera around the player without changing the rotation of the player.",
+  "authors": [
+    "OfficerYoda"
+  ],
+  "contact": {
+    "repo": "https://github.com/OfficerYoda/SurroundCam"
+  },
+  "license": "MIT",
+  "icon": "assets/surroundcam/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "de.officeryoda.surroundcam.client.SurroundcamClient"
+    ],
+    "main": [
+      "de.officeryoda.surroundcam.Surroundcam"
+    ]
+  },
+  "mixins": [
+    "surroundcam.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
